@@ -74,5 +74,17 @@ $w11k-prettyPrint-line-color-highlight: $tcc-code-bg-3;
       }
     }
 
+    &.master-regular, &.master-section-title {
+      > .header {
+        .logo {
+          width: 5em;
+          margin: 0.3em;
+          margin-right: 60px;
+          background: url('assets/images/entwicklertag-karlsruhe-logo-mini-white.svg') right center no-repeat;
+          background-size: contain;
+        }
+      }
+
+    }
   }
 }
