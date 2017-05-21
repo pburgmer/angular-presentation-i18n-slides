@@ -1,0 +1,32 @@
+<div w11k-slide-master="regular">
+  <div w11k-slide-part-source="header">
+    Sortieren
+  </div>
+
+  <div w11k-slide-part-source="content">
+    <ul class="simple">
+      <li>Beim Sortieren von Datensätzen lokale Besonderheiten beachten
+        <ul>
+          <li>z.B. Umlaute in Deutschland</li>
+        </ul>
+      </li>
+      <li>Angular
+        <ul>
+          <li>Keine orderBy-Pipe mehr in Angular 2+</li>
+          <li>Manuelles Sortieren im Code</li>
+          <li><code>Collator</code> aus Internationalization API verwenden</li>
+        </ul>
+      </li>
+    </ul>
+
+    <!--@formatter:off-->
+    <pre w11k-pretty-print lang="js">
+var strings = ["a", "c", "ä", "b"];
+strings.sort(); // ["a", "b", "c", "ä"]
+strings.sort(new Intl.Collator("de").compare) // ["a", "ä", "b", "c"]
+</pre>
+    <!--@formatter:on-->
+
+  </div>
+
+</div>

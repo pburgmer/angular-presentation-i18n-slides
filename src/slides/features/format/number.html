@@ -1,0 +1,30 @@
+<div w11k-slide-master="regular">
+  <div w11k-slide-part-source="header">
+    Zahlen formattieren
+  </div>
+
+  <div w11k-slide-part-source="content">
+    <ul class="simple">
+      <li>Tausender- und Dezimal-Trennzeichen</li>
+      <li>Position des Wähnrungszeichen</li>
+      <li>Angular
+        <ul>
+          <li>NumberPipe, CurrencyPipe, PercentPipe
+          </li>
+          <li>Benutzen <a href="https://developer.mozilla.org/de/docs/Web/JavaScript/Reference/Global_Objects/Intl" target="_blank">ECMAScript Internationalization API</a> (Polyfill: <a href="https://github.com/andyearnshaw/Intl.js" target="_blank">Intl.JS</a>)</li>
+          <li><code>lang</code>-Attribute z.B. an <code>html</code> setzen oder per Code</li>
+          <li>Wird nur ausgeführt wenn Zahl sich ändert</li>
+          <li>Sprache kann zur Laufzeit geändert werden</li>
+        </ul>
+      </li>
+    </ul>
+
+    <!--@formatter:off-->
+    <pre w11k-pretty-print lang="html">
+&lt;div&gt;{{ pi | number:'1.1-5'}}&lt;/div&gt;
+</pre>
+    <!--@formatter:on-->
+
+  </div>
+
+</div>

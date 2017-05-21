@@ -1,0 +1,36 @@
+<div w11k-slide-master="regular">
+  <div w11k-slide-part-source="header">
+    Plural
+  </div>
+
+  <div w11k-slide-part-source="content">
+    <ul class="simple">
+      <li>Plural wird in machen Sprachen anders gebildet
+        <ul>
+          <li>Nicht nur Unterscheidung zwischen 0, 1 und &gt;1</li>
+          <li>Wann werden Zahlen und wann deren Wörter ausgegeben?</li>
+        </ul>
+      </li>
+      <li>Notation für Auswahl benötigt</li>
+      <li>Angular
+        <ul>
+          <li>ICU Format</li>
+        </ul>
+      </li>
+    </ul>
+
+    <!--@formatter:off-->
+<pre w11k-pretty-print lang="html">
+&lt;div i18n=&quot;Greet the Audience&quot;&gt;
+  {listeners, plural,
+    =0 {Hello to myself}
+    =1 {Hello, I'm glad you're here}
+    other {Hello}
+  }
+&lt;/div&gt;
+</pre>
+    <!--@formatter:on-->
+
+  </div>
+
+</div>

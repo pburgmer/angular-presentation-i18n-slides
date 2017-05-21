@@ -1,0 +1,36 @@
+<div w11k-slide-master="regular">
+  <div w11k-slide-part-source="header">
+    Fehlermeldungen
+  </div>
+
+  <div w11k-slide-part-source="content">
+    <ul class="simple">
+      <li>Fehlermeldungen sollten ebenfalls übersetzt werden
+        <ul>
+          <li>Mapping von technischen Bezeichnern (z.B. HTTP Status)</li>
+        </ul>
+      </li>
+      <li>Problem bei Angular i18n
+        <ul>
+          <li>Unterstützt derzeit nur Text im Template</li>
+          <li>Keine Übersetzung im TypeScript Code (<a href="https://github.com/angular/angular/issues/11405" target="_blank">Issue</a>)</li>
+        </ul>
+      </li>
+      <li>ngx-translate: Service</li>
+    </ul>
+
+    <!--@formatter:off-->
+<pre w11k-pretty-print lang="ts">
+export class GreetingComponent {
+  constructor(translate: TranslateService) {
+    translate.get('HELLO', {value: this.city}).subscribe((res: string) => {
+      console.log(res); //=> 'hello world'
+    });
+  }
+}
+</pre>
+    <!--@formatter:on-->
+
+  </div>
+
+</div>
