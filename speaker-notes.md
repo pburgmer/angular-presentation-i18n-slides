@@ -1,17 +1,6 @@
 # i18n in großen Angular Projekten
 
-## Themen und Struktur
-
-* Grafische Darstellung
-  * Layout auf unterschiedlich lange Texte vorbereiten
-  * Schriftarten müssen Zeichensatz unterstützen
-    * font-family
-    * web-fonts
-  * Right-To-Left und Top-To-Bottom -> Text-Align, Margins, Layout
-
-    
-
-# Angular Live-Demo
+## Angular Live-Demo
 
 * ```ng new i18n-demo```
 * edit app.component.html
