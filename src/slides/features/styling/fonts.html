@@ -16,18 +16,22 @@
       </li>
       <li>Farben haben unterschiedliche Bedeutungen</li>
       <li>Icons und Emojis sollten angepasst sein (z.B. Hautfarbe)</li>
-      <li>Unterschiedliche Darstellung von Sonderzeichen (Anführungszeichen)</li>
+      <li>Unterschiedliche Darstellung von Sonderzeichen (Anführungszeichen)
+        <ul>
+          <li><q lang="fr">Bonjour Karlruhe</q></li>
+        </ul>
+      </li>
     </ul>
 
     <!--@formatter:off-->
 <pre w11k-pretty-print lang="html">
-&lt;html lang=&quot;fr&quot;&gt;&lt;/html&gt;
+&lt;q lang=&quot;fr&quot;&gt;Bonjour Karlsruhe&lt;/q&gt;
 </pre>
     <!--@formatter:on-->
 
     <!--@formatter:off-->
 <pre w11k-pretty-print lang="css">
-:lang(fr) { quotes:'\ab\2005' '\2005\bb'; }
+q:lang(fr) { quotes:'\00AB\2005' '\2005\00BB'; }
 </pre>
     <!--@formatter:on-->
 

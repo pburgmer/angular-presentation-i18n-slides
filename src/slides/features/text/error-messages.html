@@ -24,7 +24,7 @@
 export class GreetingComponent {
   constructor(translate: TranslateService) {
     translate.get('HELLO', {value: this.city}).subscribe((res: string) => {
-      console.log(res); //=> 'hello world'
+      console.log(res); //=> 'Hello Karlsruhe'
     });
   }
 }
