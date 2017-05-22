@@ -1,0 +1,30 @@
+<div w11k-slide-master="regular">
+  <div w11k-slide-part-source="header">
+    Datum formattieren
+  </div>
+
+  <div w11k-slide-part-source="content">
+    <ul class="simple">
+      <li>Reihenfolge der Elemente</li>
+      <li>Anpassung an Zeitzone</li>
+      <li>Kalendersystem (z.B. für Nordkorea oder Indien)</li>
+      <li>Angular
+        <ul>
+          <li>DatePipe</li>
+          <li>Input: Date-Object, ISO-String, number</li>
+          <li>Konfiguration: ShortCuts oder Pattern</li>
+          <li>Nur Gregorianischer Kalender</li>
+        </ul>
+      </li>
+    </ul>
+
+    <!--@formatter:off-->
+<pre w11k-pretty-print lang="html">
+&lt;div&gt;{{ today | date:'shortDate'}}&lt;/div&gt;
+&lt;div&gt;{{ today | date:'dd.MM.yyyy'}}&lt;/div&gt;
+</pre>
+    <!--@formatter:on-->
+
+  </div>
+
+</div>
